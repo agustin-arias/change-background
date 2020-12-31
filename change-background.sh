@@ -1,7 +1,6 @@
 #!/bin/bash
 # List of possible arguments:
 #   new
-#   erotica
 #   3d-graphics
 #   animals
 #   anime
@@ -23,12 +22,7 @@
 #   world
 
 downloadImage(){
-    declare -A eroWallpapers=( [erotica]=1 [hentai]=1)
-    if [[ ${eroWallpapers["$1"]} ]] ; then
-        mainPage='https://ero.motaen.com'
-    else
-        mainPage='https://motaen.com'
-    fi
+    mainPage='https://motaen.com'
 
     case $1 in
         new)
