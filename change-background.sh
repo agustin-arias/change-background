@@ -24,26 +24,34 @@
 downloadImage(){
     mainPage='https://motaen.com'
 
-    case $1 in
-        new)
-            images="${mainPage}"'/new'
-            ;;
-        aviation)
-            images="${mainPage}"'/categories/view/name/avia'
-            ;;
-        cars)
-            images="${mainPage}"'/categories/view/name/auto'
-            ;;
-        men)
-            images="${mainPage}"'/categories/view/name/male-celebrities'
-            ;;
-        various)
-            images="${mainPage}"'/categories/view/name/other'
-            ;;
-        *)
-            images="${mainPage}"'/categories/view/name/'"$1"
-            ;;
-    esac
+    images="${mainPage}"
+
+    if [ "$1" = "new" ] ; then
+
+        images+='/new'
+
+    else
+
+        images+='/categories/view/name/'
+
+        case $1 in
+            aviation)
+                images+='avia'
+                ;;
+            cars)
+                images+='auto'
+                ;;
+            men)
+                images+='male-celebrities'
+                ;;
+            various)
+                images+='other'
+                ;;
+            *)
+                images+="$1"
+                ;;
+        esac
+    fi
 
     # get the link to a image
     xpathGeneral='/html/body/main/div[@class="parent-element"]'
