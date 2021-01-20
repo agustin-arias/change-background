@@ -2,6 +2,13 @@
 ## What does this script do?
 This script takes a random wallpaper from [https://motaen.com](https://motaen.com)
 
+Example video:
+
+<p align="center">
+  <img src="demonstration.gif" />
+</p>
+
+
 ## Technologies used
 For this project I've used:
 - [xmllint](https://linux.die.net/man/1/xmllint) *XML and HTML parser*
