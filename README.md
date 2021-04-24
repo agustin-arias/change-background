@@ -21,11 +21,15 @@ For this project I've used:
 1. run `git clone https://github.com/agustinntarias/change-background.git` to clone the repository
 2. open the terminal and cd into the folder *change-background*
 3. install required dependencies with 
-	```
+```
 	sudo apt install curl
 	sudo snap install libxml2 # or sudo apt install libxml2-utils
-	```
-4. run `./change-background.sh [category]`, where category can be any of the following
+```
+4. make script executable running
+```
+	chmod +x change-background.sh	
+```
+5. run `./change-background.sh [category]`, where category can be any of the following
     + new
     + 3d-graphics
     + animals
