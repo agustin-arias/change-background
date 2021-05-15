@@ -25,11 +25,11 @@ For this project I've used:
 	sudo apt install curl
 	sudo snap install libxml2 # or sudo apt install libxml2-utils
 ```
-4. make script executable running
+4. make the script executable by running
 ```
 	chmod +x change-background.sh	
 ```
-5. run `./change-background.sh [category]`, where category can be any of the following
+5. run `./change-background.sh [category]`, where *category* can be any of the following
     + new
     + 3d-graphics
     + animals
