@@ -1,6 +1,6 @@
 # Change background and lockscreen wallpaper
 ## What does this script do?
-This script takes a random wallpaper from [https://motaen.com](https://motaen.com)
+This script takes two random wallpaper from [motaen](https://motaen.com) and sets them as lockscreen and background pictures.
 
 Example video:
 
