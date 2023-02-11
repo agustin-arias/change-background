@@ -15,14 +15,14 @@
 #   motorcycles
 #   movies
 #   music
-#   nature
+#   nature 
 #   space
 #   sport
 #   various
 #   world
 
 downloadImage(){
-    mainPage='https://motaen.com'
+    mainPage='' # page is now deprecated
 
     images="${mainPage}"
 
